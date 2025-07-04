@@ -1,0 +1,70 @@
+# XConomy签到系统配置文件
+
+# 货币名称，显示在奖励信息中
+currency-name: "金币"
+
+# 签到菜单设置
+menu-title: "&6签到系统"
+menu-size: 45
+menu-background:
+  material: LIGHT_BLUE_STAINED_GLASS_PANE
+  name: "&7"
+  lore: []
+
+# 分隔线设置
+divider-slot: 27-35
+divider-item:
+  material: GRAY_STAINED_GLASS_PANE
+  name: "&7&m-------------"
+  lore: []
+
+# 签到按钮设置
+checkin-button-slot: 40
+checkin-button:
+  material: EMERALD_BLOCK
+  name: "&a今日签到"
+  lore:
+    - "&7连续签到: {streak} 天"
+    - "&7总签到次数: {total} 次"
+    - ""
+    - "&a点击此处签到"
+    - "&7今日奖励: 10 金币"
+    - ""
+    - "&e上次签到: {last_checkin}"
+
+# 奖励预览设置
+reward-preview-title: "&e每日奖励"
+reward-preview-slot: 13
+reward-preview-item:
+  material: GOLD_INGOT
+  name: "&6每日奖励"
+  lore:
+    - "&a+10 金币"
+    - "&7每天固定奖励"
+
+# 已签到状态
+checked-item:
+  material: LIME_STAINED_GLASS_PANE
+  name: "&a已签到"
+  lore: []
+
+# 统计信息显示
+stats-slot: 42
+stats-item:
+  material: BOOK
+  name: "&6签到统计"
+  lore:
+    - "&7本月签到: {monthly} 天"
+    - "&7连续签到: {streak} 天"
+    - "&7总签到次数: {total} 次"
+    - "&7累计获得: {total_money} 金币"
+
+# 玩家加入游戏时是否提醒签到
+join-reminder: true
+
+# 音效设置
+sounds:
+  open-menu: "UI_BUTTON_CLICK"
+  checkin-success: "ENTITY_PLAYER_LEVELUP"
+  already-checked: "BLOCK_NOTE_BLOCK_BASS"
+  error: "ENTITY_VILLAGER_NO"    
